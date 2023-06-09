@@ -121,5 +121,21 @@ main .form #result h2 {
     color: #F2F2F2;
 }
 
+@media (max-width: 300px) {
+    main .form h1 {
+        font-size: 1.7rem;
+    }
 
+    main .form input {
+        font-size: 2rem;
+    }
+
+    main .form .botones {
+        gap: 8px;
+    }
+
+    main .form .botones .boton {
+        font-size: 1rem;
+    }
+}
 
