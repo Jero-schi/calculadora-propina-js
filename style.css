@@ -173,3 +173,14 @@ main .form #result h2 {
     }
 }
 
+@media (min-width: 1000px) {
+    main .form {
+        width: 55%;
+        height: 80%;
+    }
+
+    main .form .botones {
+        height: 30%;
+    }
+}
+
