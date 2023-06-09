@@ -130,12 +130,46 @@ main .form #result h2 {
         font-size: 2rem;
     }
 
+    main .form input::placeholder {
+        font-size: 1.5rem
+    }
+
     main .form .botones {
         gap: 8px;
     }
 
     main .form .botones .boton {
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 700px) {
+    main .form h1 {
+        font-size: 2.5rem;
+    }
+
+    main .form input {
+        font-size: 3rem;
+        width: 90%;
+    }
+
+    main .form .botones {
+        padding: 4px 32px;
+    }
+
+    main .form .botones .boton {
+        width: 80%;
+        height: 100%;
+        font-size: 1.8rem;
+    }
+
+    main .form #result {
+        height: 3rem;
+        width: 60%;
+    }
+
+    main .form #result h2 {
+        font-size: 2rem;
     }
 }
 
