@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de propinas</title>
+</head>
+<body>
+    <main>
+        <div class="form">
+            <h1>Calcula tu propina</h1>
+        
+            <input id="input" type="text" placeholder="Costo total">
+        
+            <div class="botones">
+                <button class="boton" onclick="calcularPorcentaje(0.1)" id="diez">10% 😐</button>
+                <button class="boton" onclick="calcularPorcentaje(0.15)" id="quince">15% 🙂</button>
+                <button class="boton" onclick="calcularPorcentaje(0.2)" id="veinte">20% 🤩</button>
+                <button class="boton" onclick="calcularPorcentaje(0.25)" id="veinticinco">25% 🥳</button>
+            </div>
+        
+            <div class="result">
+                <h2 id="propina"></h2>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
