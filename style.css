@@ -130,8 +130,38 @@ main .form #result h2 {
 }
 
 @media (max-width: 300px) {
+    main .form {
+        width: 90%;
+    }
+
     main .form h1 {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
+    }
+
+    main .form input {
+        font-size: 1.8rem;
+    }
+
+    main .form input::placeholder {
+        font-size: 1.3rem
+    }
+
+    main .form .botones {
+        gap: 8px;
+    }
+
+    main .form .botones .boton {
+        font-size: .8rem;
+    }
+
+    main .form #result h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    main .form h1 {
+        font-size: 1.5rem;
     }
 
     main .form input {
@@ -148,6 +178,10 @@ main .form #result h2 {
 
     main .form .botones .boton {
         font-size: 1rem;
+    }
+
+    main .form #result h2 {
+        font-size: 1.2rem;
     }
 }
 
