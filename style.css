@@ -23,12 +23,17 @@ main {
     align-items: center;
 }
 
+/* #Layer_1 {
+    position: absolute;
+} */
+
 main .form {
     position: relative;
 
     width: 80%;
-    height: 70%;
+    height: 60%;
     padding: 24px;
+    margin-bottom: 72px;
 
     background-color: #f2a08d4c;
     box-shadow: 9px 10px 20px -5px rgba(166,75,75,1);
@@ -56,7 +61,7 @@ main .form h1 {
     top: -25px;
 }
 
-main .form input {
+main .form #input {
     width: 100%;
     height: 20%;
 
@@ -88,27 +93,60 @@ main .form .botones {
     width: 100%;
     height: 30%;
     padding: 4px;
+    margin-bottom: 16px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
+
 }
 
-main .form .botones .boton {
-    width: 95%;
-    height: 90%;
+main .form .botones #rango {
+    height: 60px;
+    padding: 0 12px;
 
     background-color: #a64b4baf;
     box-shadow: 5px 8px 10px 0px rgba(166, 75, 75, 0.6);
     border: none;
     border-radius: 30px;
+}
 
-    font-size: 1.5rem;
+input[type='range'] {
+    width: 90%;
+}
+
+input[type='range'], 
+input[type='range']::-webkit-slider-runnable-track, 
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -11px;
+    background-color: rgba(255,234,225,1);
+    height: 30px;
+    width: 30px;
+
+    border-radius: 50%;
+    border: 5px solid #a64b4baf;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background-color: rgba(255,234,225,1);
+    height: 7px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+main .form #parrafo {
+    padding: 8px 12px 0px 12px;
+    background-color: #a64b4baf;
+    border-radius: 25px 25px 0px 0px;
+    margin-right: 45%;
+
     color: #F2F2F2;
-
-    cursor: pointer;
+    font-size: 4.5vw;
 }
 
 main .form #result {
@@ -138,16 +176,12 @@ main .form #result h2 {
         font-size: 1.2rem;
     }
 
-    main .form input {
+    main .form #input {
         font-size: 1.8rem;
     }
 
-    main .form input::placeholder {
+    main .form #input::placeholder {
         font-size: 1.3rem
-    }
-
-    main .form .botones {
-        gap: 8px;
     }
 
     main .form .botones .boton {
@@ -164,16 +198,12 @@ main .form #result h2 {
         font-size: 1.5rem;
     }
 
-    main .form input {
+    main .form #input {
         font-size: 2rem;
     }
 
-    main .form input::placeholder {
+    main .form #input::placeholder {
         font-size: 1.5rem
-    }
-
-    main .form .botones {
-        gap: 8px;
     }
 
     main .form .botones .boton {
@@ -190,7 +220,7 @@ main .form #result h2 {
         font-size: 2.5rem;
     }
 
-    main .form input {
+    main .form #input {
         font-size: 3rem;
         width: 90%;
     }
@@ -231,7 +261,7 @@ main .form #result h2 {
         font-size: 3.2rem;
     }
 
-    main .form input {
+    main .form #input {
         font-size: 3.7rem;
     }
 
