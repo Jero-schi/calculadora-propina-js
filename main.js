@@ -23,6 +23,22 @@ $rango.addEventListener('input', () => {
     $parrafo.textContent = `${valueRango} %`;
     const value = Number($input.value)
     const propina = value * valueRango / 100
+
+    $rectMoney.setAttribute('fill', obtenerColor(valueRango))
     
     $propina.textContent = `$${Math.trunc(propina)}`
 })
+
+function obtenerColor(rango) {
+    if (rango == 5) {
+        return '#F09945'
+    } else if (rango == 10) {
+        return '#E0D74C'
+    } else if (rango == 15 || rango == 20) {
+        return '#A7FA52'
+    } else if (rango == 50) {
+        return '#368F30'
+    } else {
+        return '#44B248'
+    }
+}

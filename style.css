@@ -23,9 +23,31 @@ main {
     align-items: center;
 }
 
-/* #Layer_1 {
+#Layer_1 {
     position: absolute;
-} */
+    bottom: 34px;
+    left: -100px;
+    width: 40%;
+
+    animation: move-rigth 2s ease-out both;
+}
+
+@keyframes move-rigth {
+    from {
+        bottom: 34px;
+        left: -100px;
+        width: 40%;
+    }
+
+    to {
+        left: -15px;
+        width: 60%;
+    }
+}
+
+#rect-money {
+    transition: all 0.2s linear;
+}
 
 main .form {
     position: relative;
