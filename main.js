@@ -25,6 +25,7 @@ $rango.addEventListener('input', () => {
     const propina = value * valueRango / 100
 
     $rectMoney.setAttribute('fill', obtenerColor(valueRango))
+    // $parrafo.style.color = obtenerColor(valueRango)
     
     $propina.textContent = `$${Math.trunc(propina)}`
 })
